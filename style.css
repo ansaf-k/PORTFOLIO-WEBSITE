@@ -37,6 +37,9 @@ h1,
     font-weight: 700;
     color: var(--c-dark);
 }
+h3 {
+    color: var(--c-dark);
+}
 
 a {
     text-decoration: none;
@@ -96,6 +99,11 @@ img {
     margin: 0 50px;
     font-family: (var(--f-main));
 }
+@media (max-width: 992px) {
+    .nav-item {
+        margin: 0 auto;
+    }
+}
 
 
 .navbar.scrolled {
@@ -114,7 +122,13 @@ img {
 .navbar.scrolled .navbar-brand {
     color: var(--c-light) !important;
 }
-
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-collapse {
+        display: flex !important;
+        flex-basis: auto;
+        justify-content: flex-end;
+    }
+}
 
 @media (min-width: 992px) {
     .navbar-expand-lg .navbar-nav .nav-link {
@@ -124,18 +138,18 @@ img {
 }
 
 .navbar .navbar-nav .nav-link {
-    font-weight: 300;
-    color: white
+    font-weight: 500;
+    color: #094824;
 }
 
 .navbar .navbar-nav .nav-link:hover {
-    color: var(--c-brand);
+    color: #000 !important;
 }
 
 .navbar-brand {
     font-size: 24px;
     font-weight: 700;
-    color: white;
+    color: var(--c-brand);
 }
 
 .social-icons {
@@ -154,8 +168,8 @@ img {
 }
 
 .social-icons:hover {
-    background-color: blueviolet;
-    color: white;
+    background-color: #FFf16C;
+    color: var(--c-brand) !important;
     border-radius: 5px;
     border: 0;
 
@@ -178,8 +192,8 @@ img {
 }
 
 .btn-brand:hover {
-    background-color: blueviolet;
-    color: white;
+    background-color: #FFf;
+    color: var(--c-brand);
     border-color: none;
 }
 
